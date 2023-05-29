@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 15px 30px;
+            padding: 8px;
+            font-size: 17px;
+        }
+        h1{
+            padding: 20px;
+            background-color: aquamarine;
+            text-align: center;
+            font-weight: 500;
+        }
+        .Container{
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        fieldset {
+            background-color: #fff;
+            border: 1px #ccc;
+        }
+        input[type="submit"] {
+            background-color: aquamarine;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <form action=""method="Get" >
+            <h1>Payment Form</h1>
+           
+            <h2>User Information</h2>
+            <p>Name: *  <input type="text" name="name" required placeholder="Alok singh" > </p>
+            <fieldset>
+             <legend>Gender * </legend>
+            <p>
+             Male <input type="radio" name="gender" id="Male" required>
+             Female <input type="radio" name="gender" id="Female" required>
+            </p>
+            </fieldset>
+            <p>Address:
+             <textarea placeholder="enter your Address" name="Address" id="Address" cols="100" rows="10"></textarea></p>
+            <p>Email: *
+               <input type="email" name="email" id="email" required placeholder="alok@123" ></p>
+            <P>Pincode: *
+               <input type="number" name="pincode" id="pincode" required placeholder="123456"></P>
+            <hr>
+            <h2>Payment Information</h2>
+            <p>Card Type: *
+             <select name="card_type" id="card_type"required>
+                 <option value="">Select a Card Type</option>
+                 <option value="visa">visa</option>
+                 <option value="Rupay">Rupay</option>
+                 <option value="Matercard">Matercard</option>
+             </select>
+            </p>
+            <p>Card Number: * <input type="number" name="card number" id="card number"required placeholder="1111-2222-3333-4444"></p>
+            <p>Expiry Date: * <input type="date" name="expiry date" id="expiry date"required placeholder="dd/mm/yy" ></p>
+            <p>CVV: * <input type="password" name="cvv" id="cvv" placeholder="123" ></p>
+            <input type="submit" value="Pay Now">
+     
+     
+         </form>
+</div>
+    
+    
+
+</body>
+</html>

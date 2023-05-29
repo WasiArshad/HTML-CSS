@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header h1 { */
+    /* text-align: center; */
+    /* font-size: 40px; */
+    /* color: white; */
+
+
+/* header { */
+    /* padding: 40px; */
+
+footer, nav {
+    background-color: #333;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+}
+
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+section {
+    height: 50%;
+    padding: 75px 0px;
+    min-height: 30vh;
+}
+
+video {
+    padding: 12px;
+}
+
+/* iframe { */
+    /* height: 75vh; */
+
+
+/* img { */
+    /* padding: 5px; */
+
+
+section h5 {
+    margin: 40px;
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.banner{
+    background-image: url('../assets/logo/logo.gif.gif');
+    height: 20vw;
+    min-height: 100px;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: 35%;
+}
+section h2 span {
+    background: linear-gradient(to right, #f5d837, #bbb812);
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+  
+  .carousel-cell {
+    width: 66%;
+    /* height: 200px; */
+    margin-right: 10px;
+    /* background: #8C8; */
+    border-radius: 5px;
+    /* counter-increment: carousel-cell; */
+  }
+  .carousel-cell video {
+    max-width: 100%;
+  }
+  /* .carousel-cell iframe{ */
+    /* flex-direction: row; */
+    .iframe-container {
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 */
+        position: relative;
+      } 
+      
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+        width: 100%;
+        height: 100%;
+      }
+  .img-responsive{
+    max-width: 100vh;
+    height: 100vh;
+  }
+  .profile-img{
+    border-radius: 50%;
+  }
+  .profile-name{
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 20px 0 30px 0;
+  }
+  .sm_handle a {
+    background-color: rgb(125 125 125 / 25%);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .sm_handle a:hover {
+    background-color: rgb(30 30 30 / 25%);
+  }
+  .sm_handle a i {
+    margin: 5px;
+  }
+  .yt_handle {
+    color: #FF0000;
+  }
+  .li_handle {
+    color:  #0c76a8;
+  }
+  .in_handle {
+    color: #dd2a7b;
+  }
+  .about_us{
+    margin: 50px;
+  }
+  .about_title{
+    font-size: 1.45em;
+    padding: 0 10px;
+    color: #120f5e;
+  }
+  .about_content{
+    color: #1c1a3a;
+    font-weight: 900;
+    padding-bottom: 10px 0 20px 0px;
+  }
+.flex-align_right {
+    margin-left: auto;
+}
+.menu-btn:hover{
+    background-color: #ddd;   
+}
+@media screen and (max-width: 600px) {
+   footer, nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .flex-align_right {
+        margin-left: 0;
+    }
+}

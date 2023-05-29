@@ -1,0 +1,22 @@
+p,a,h1{
+    color:yellow;
+    
+}
+li{
+    list-style-type: style square;
+}
+span.special,li.special{
+    color: wheat
+}
+li em{
+    color: red;
+}
+a:hover{
+    color: rebeccapurple;
+    text-decoration: none;
+}
+    body h1+p .special{
+        color: yellow;
+        background-color: black;
+        padding: 5px;
+    }

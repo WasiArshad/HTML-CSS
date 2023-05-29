@@ -1,0 +1,19 @@
+ #heading {
+    color: red;
+    background-color: black;
+}
+p#one{
+    font-size: xx-large;
+    color: blueviolet;
+    padding: 10px;
+    background-color: brown;
+}
+li[class] {
+    font-size: 300%;
+}
+li[class="a"] {
+    color: black;
+}
+li[class~="a"] {
+    color: black;
+}
